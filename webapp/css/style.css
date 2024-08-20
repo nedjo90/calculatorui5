@@ -1,0 +1,20 @@
+
+div .calculatorVLayout{
+    height: 100%;
+    width: 100%;
+}
+
+button.equalBtn{
+    height: 100%;
+}
+
+button.equalBtn > span{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+button.calculatorBtn{
+    height: 100%;
+    padding: 0;
+    margin: 0.5rem;
+}

@@ -1,0 +1,86 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns:grid="sap.ui.layout.cssgrid"
+    xmlns:core="sap.ui.core"
+    controller="sap.ui.calculator.controller.App"
+>
+    <App>
+        <pages>
+            <Page title="Calculator">
+                <content>
+                    <l:VerticalLayout class="calculatorVLayout">
+                        <Input
+                            class="sapUiLargeMarginBottom"
+                            id="result"
+                            value="0"
+                            editable="false"
+                            type="Text"
+                            textAlign="Center"
+                            width="100%"
+                        ></Input>
+                        <grid:CSSGrid
+                            id="grid"
+                            gridTemplateColumns="1fr"
+                            gridTemplateRows="1fr 4fr"
+                        >
+                            <grid:CSSGrid
+                                gridTemplateColumns="1fr 1fr 1fr 1fr"
+                                gridTemplateRows="1fr"
+                            >
+                                <Button id="plus" press=".onPressPlus" class="calculatorBtn"
+                                    text="+" />
+                                <Button id="minus" press=".onPressMinus" class="calculatorBtn"
+                                    text="-" />
+                                <Button id="multiply" press=".onPressMultiply" class="calculatorBtn"
+                                    text="*" />
+                                <Button id="divide" press=".onPressDivide" class="calculatorBtn"
+                                    text="/" />
+                            </grid:CSSGrid>
+
+                            <grid:CSSGrid
+                                gridTemplateColumns="3fr 1fr"
+                                gridTemplateRows="1fr"
+                            >
+                                <grid:CSSGrid
+                                    gridTemplateColumns="1fr 1fr 1fr"
+                                    gridTemplateRows="1fr 1fr 1fr"
+                                >
+                                    <Button id="one" press=".onPressOne" class="calculatorBtn"
+                                        text="1" />
+                                    <Button id="two" press=".onPressTwo" class="calculatorBtn"
+                                        text="2" />
+                                    <Button id="three" press=".onPressThree" class="calculatorBtn"
+                                        text="3" />
+                                    <Button id="four" press=".onPressFour" class="calculatorBtn"
+                                        text="4" />
+                                    <Button id="five" press=".onPressFive" class="calculatorBtn"
+                                        text="5" />
+                                    <Button id="six" press=".onPressSix" class="calculatorBtn"
+                                        text="6" />
+                                    <Button id="seven" press=".onPressSeven" class="calculatorBtn"
+                                        text="7" />
+                                    <Button id="eight" press=".onPressEight" class="calculatorBtn"
+                                        text="8" />
+                                    <Button id="nine" press=".onPressNine" class="calculatorBtn"
+                                        text="9" />
+                                    <Button id="dot" press=".onPressDot" class="calculatorBtn"
+                                        text="." />
+                                    <Button id="zero" press=".onPressZero" class="calculatorBtn"
+                                        text="0" />
+                                    <Button id="cancel" press=".onPressCancel" class="calculatorBtn"
+                                        text="C" />
+                                </grid:CSSGrid>
+                                <Button id="equal" press=".onPressEqual"
+                                    class="calculatorBtn equalBtn" text="=" />
+                            </grid:CSSGrid>
+
+                        </grid:CSSGrid>
+
+                    </l:VerticalLayout>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
