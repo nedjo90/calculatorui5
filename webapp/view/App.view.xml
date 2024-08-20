@@ -4,7 +4,7 @@
     xmlns:l="sap.ui.layout"
     xmlns:grid="sap.ui.layout.cssgrid"
     xmlns:core="sap.ui.core"
-    controller="sap.ui.calculator.controller.App"
+    controllerName="sap.ui.calculator.controller.App"
 >
     <App>
         <pages>
@@ -41,16 +41,16 @@
                                             gridTemplateColumns="1fr 1fr 1fr 1fr"
                                             gridTemplateRows="1fr"
                                         >
-                                            <Button id="plusBtn" press=".onPressPlusBtn"
+                                            <Button id="plusBtn" press=".onPressBtn"
                                                 class="calculatorBtn"
                                                 text="+" />
-                                            <Button id="minusBtn" press=".onPressMinusBtn"
+                                            <Button id="minusBtn" press=".onPressBtn"
                                                 class="calculatorBtn"
                                                 text="-" />
-                                            <Button id="multiplyBtn" press=".onPressMultiplyBtn"
+                                            <Button id="multiplyBtn" press=".onPressBtn"
                                                 class="calculatorBtn"
                                                 text="*" />
-                                            <Button id="divideBtn" press=".onPressDivideBtn"
+                                            <Button id="divideBtn" press=".onPressBtn"
                                                 class="calculatorBtn"
                                                 text="/" />
                                         </grid:CSSGrid>
@@ -63,44 +63,44 @@
                                                 gridTemplateColumns="1fr 1fr 1fr"
                                                 gridTemplateRows="1fr 1fr 1fr"
                                             >
-                                                <Button id="oneBtn" press=".onPressOneBtn"
+                                                <Button id="oneBtn" press=".onPressBtn"
                                                     class="calculatorBtn"
                                                     text="1" />
-                                                <Button id="twoBtn" press=".onPressTwoBtn"
+                                                <Button id="twoBtn" press=".onPressBtn"
                                                     class="calculatorBtn"
                                                     text="2" />
-                                                <Button id="threeBtn" press=".onPressThreeBtn"
+                                                <Button id="threeBtn" press=".onPressBtn"
                                                     class="calculatorBtn"
                                                     text="3" />
-                                                <Button id="fourBtn" press=".onPressFourBtn"
+                                                <Button id="fourBtn" press=".onPressBtn"
                                                     class="calculatorBtn"
                                                     text="4" />
-                                                <Button id="fiveBtn" press=".onPressFiveBtn"
+                                                <Button id="fiveBtn" press=".onPressBtn"
                                                     class="calculatorBtn"
                                                     text="5" />
-                                                <Button id="sixBtn" press=".onPressSixBtn"
+                                                <Button id="sixBtn" press=".onPressBtn"
                                                     class="calculatorBtn"
                                                     text="6" />
-                                                <Button id="sevenBtn" press=".onPressSevenBtn"
+                                                <Button id="sevenBtn" press=".onPressBtn"
                                                     class="calculatorBtn"
                                                     text="7" />
-                                                <Button id="eightBtn" press=".onPressEightBtn"
+                                                <Button id="eightBtn" press=".onPressBtn"
                                                     class="calculatorBtn"
                                                     text="8" />
-                                                <Button id="nineBtn" press=".onPressNineBtn"
+                                                <Button id="nineBtn" press=".onPressBtn"
                                                     class="calculatorBtn"
                                                     text="9" />
-                                                <Button id="dotBtn" press=".onPressDotBtn"
+                                                <Button id="dotBtn" press=".onPressBtn"
                                                     class="calculatorBtn"
                                                     text="." />
-                                                <Button id="zeroBtn" press=".onPressZeroBtn"
+                                                <Button id="zeroBtn" press=".onPressBtn"
                                                     class="calculatorBtn"
                                                     text="0" />
-                                                <Button id="cancelBtn" press=".onPressCancelBtn"
+                                                <Button id="cancelBtn" press=".onPressBtn"
                                                     class="calculatorBtn"
                                                     text="C" />
                                             </grid:CSSGrid>
-                                            <Button id="equalBtn" press=".onPressEqualBtn"
+                                            <Button id="equalBtn" press=".onPressBtn"
                                                 class="calculatorBtn equalBtn" text="=" />
                                         </grid:CSSGrid>
 
