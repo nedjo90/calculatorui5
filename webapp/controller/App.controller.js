@@ -2,7 +2,6 @@ sap.ui.define(
   ["sap/ui/core/mvc/Controller", "sap/ui/calculator/controller/Utils"],
   function (Controller, Utils) {
     "use strict";
-    console.clear();
 
     return Controller.extend("sap.ui.calculator.controller.App", {
       onPressBtn: function (event) {
